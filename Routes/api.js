@@ -7,6 +7,9 @@ Route.get("/", (req, res, next) => {
   res.send("Node-Redis CRUD Application | check Readme for instructions");
 });
 
+// ping the redis server
+// Route.get("/ping", redis.ping);
+
 // get all users
 Route.get("/users", redis.get_all_users);
 
